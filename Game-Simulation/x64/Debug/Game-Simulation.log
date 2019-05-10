@@ -1,6 +1,6 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Game-Simulation.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Game-Simulation.cpp
-c:\users\plawson0476\desktop\game-simulation\game-simulation\game-simulation.cpp(266): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
-c:\users\plawson0476\desktop\game-simulation\game-simulation\game-simulation.cpp(269): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
-c:\users\plawson0476\desktop\game-simulation\game-simulation\game-simulation.cpp(322): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
-  Game-Simulation.vcxproj -> C:\Users\plawson0476\Desktop\Game-Simulation\x64\Debug\p.exe
+z:\projects\game-simulation\game-simulation\game-simulation.cpp(282): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
+z:\projects\game-simulation\game-simulation\game-simulation.cpp(285): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
+z:\projects\game-simulation\game-simulation\game-simulation.cpp(338): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
+  Game-Simulation.vcxproj -> Z:\Projects\Game-Simulation\x64\Debug\p.exe

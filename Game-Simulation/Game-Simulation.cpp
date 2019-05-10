@@ -39,6 +39,7 @@ double edef; // same as def, but for enemy
 //Name Prompt
 int nameprompt(){ // gathers username
 	int nameconfirm = 0;
+	int namechange = 0;
 	cout << "What is the name of your player? " << endl;
 	do {
 		getline(cin, name);
@@ -72,8 +73,23 @@ int nameprompt(){ // gathers username
 			Sleep(250);
 			cout << ". . ." << endl;
 			Sleep(250);
-			cout << "0 - There are plenty of other names to choose. (Change your name)" << endl << "1 - (I won't lie; only death awaits you at the end of this path)." << endl;
-			cin >> nameconfirm;
+			cout << "2 - There are plenty of other names to choose. (Change your name)" << endl << "1 - (I won't lie; only death awaits you at the end of this path)." << endl;
+			cin >> namechange;
+			
+		}
+		while(namechange == 2) {
+			nameconfirm = 0;
+			cout << "What shall you change it to?" << endl << " ";
+			cin >> name;
+			if (name != " ") {
+				nameconfirm = 1;
+				namechange = 0;
+			}
+			else if(name == " ") {
+				cout << "Choose a non-single blank name" << endl;
+			}
+			
+		}
 			if (nameconfirm == 1 && name == "DeadFace") {
 				cout << "F o o l i s h   ";
 				Sleep(500);
@@ -89,11 +105,11 @@ int nameprompt(){ // gathers username
 				Sleep(500);
 				easteregg1 = true;
 			}
-			else {
-				cout << "Smart choice. Their's plenty of other names." << endl;
+			else if (nameconfirm == 1 && name != "DeadFace") {
+				cout << "Smart choice. There are plenty of other names." << endl;
 				break;
 			}
-		}		
+				
 	} while (nameconfirm == 0);
 	return 0;
 }
